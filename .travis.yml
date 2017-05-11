@@ -1,0 +1,10 @@
+language: c++
+matrix: 
+  include: 
+  - jdk: oraclejdk7
+    os: linux
+    script:
+    - wget https://sourceforge.net/projects/opencvlibrary/files/opencv-android/3.2.0/opencv-3.2.0-android-sdk.zip
+    - unzip opencv-3.2.0-android-sdk.zip
+    - ./cdep fullfill OpenCV-android-sdk/ ${TRAVIS_TAG:-0.0.0} cdep-manifest.yml
+

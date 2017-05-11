@@ -1,0 +1,9 @@
+targets: [android]
+includes: [include]
+badges: no
+android:
+  ndk:
+    versions: [r13b]
+    runtimes: [c++]
+    platforms: [12, 21]
+    abis: [x86, x86_64, armeabi]
